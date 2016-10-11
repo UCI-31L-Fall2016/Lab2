@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module comparator2_tb;
+module comparator2_tb; // No ports. Don't forget the semi-colon!
 
 logic [1:0] a;  // Input variable to modify
 logic [1:0] b;  // Input variable to modify

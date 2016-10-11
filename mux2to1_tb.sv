@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ps    // 1ns for #1 (1 time unit)
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module mux2to1_tb;
+module mux2to1_tb;  // Testbenches do not need any ports. Don't forget semi-colon!
 
 logic a;  // definition of variables to modify
 logic b;
@@ -34,8 +34,8 @@ mux2to1 L1( // module instantiation. Instance name is L1.
     .Y(y)
     );
 
-initial begin
-// Initial values of input
+initial begin   // initial block executes sequentially when simulation begins
+// Beginning of simulation. Initial values given to inputs
 a = 1'b0;   // Give the value of 0 to a
 b = 1'b0;   
 sel = 1'b0;
@@ -56,6 +56,6 @@ a = 1'b1;
 b = 1'b0;
 sel = 1'b0;
 
-end
+end // end of initial block
 
-endmodule
+endmodule   // end of module declaration

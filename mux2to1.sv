@@ -20,12 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module mux2to1(
+module mux2to1( //Ports declaration inside the brackets.
     input A,
     input B,
     input sel,
     output Y
-    );
+    );  //  Don't forget semi-colon
     
     assign Y = (sel == 1'b0)? A : B;
     // Means that if sel == 0, Y = A, if sel == 1, Y = B
